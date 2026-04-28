@@ -1,38 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QCYS9GDZVV"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-QCYS9GDZVV');
-    </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Connect and manage multiple Shopify stores seamlessly on Android. nsights.ink - Coming soon to revolutionize your e-commerce management experience.">
-    <meta name="keywords" content="Shopify, Android app, multiple stores, e-commerce management, Shopify connector, mobile commerce, store management">
-    <meta name="author" content="nsights.ink">
-    <meta name="robots" content="index, follow">
-    
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://nsights.ink/">
-    <meta property="og:title" content="nsights.ink - Multi-Shopify Store Manager for Android">
-    <meta property="og:description" content="Connect and manage multiple Shopify stores seamlessly on Android. Coming soon.">
-    <meta property="og:image" content="https://nsights.ink/og-image.jpg">
-    
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://nsights.ink/">
-    <meta property="twitter:title" content="nsights.ink - Multi-Shopify Store Manager for Android">
-    <meta property="twitter:description" content="Connect and manage multiple Shopify stores seamlessly on Android. Coming soon.">
-    <meta property="twitter:image" content="https://nsights.ink/og-image.jpg">
-    
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
-    
-    <title>nsights.ink - Multi-Shopify Store Manager | Coming Soon</title>
-    
+    <title>Privacy Policy - nsights.ink</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Lexend:wght@600;800&display=swap" rel="stylesheet">
@@ -41,489 +12,174 @@
         :root {
             --primary: #0A0E27;
             --accent: #00D9FF;
-            --accent-glow: rgba(0, 217, 255, 0.2);
-            --secondary: #FF6B9D;
             --text: #FFFFFF;
             --text-muted: rgba(255, 255, 255, 0.7);
-            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --glow: 0 0 40px var(--accent-glow);
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --border: rgba(255, 255, 255, 0.08);
         }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+
         body {
-            /* Applied Publica Sans as primary font */
-            font-family: 'Publica Sans', 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Publica Sans', 'DM Sans', sans-serif;
             background: var(--primary);
             color: var(--text);
-            overflow-x: hidden;
-            position: relative;
-            min-height: 100vh;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
-        
-        /* Animated background */
-        body::before {
-            content: '';
-            position: fixed;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: 
-                radial-gradient(circle at 20% 30%, rgba(102, 126, 234, 0.15) 0%, transparent 50%),
-                radial-gradient(circle at 80% 70%, rgba(118, 75, 162, 0.15) 0%, transparent 50%),
-                radial-gradient(circle at 40% 80%, rgba(0, 217, 255, 0.1) 0%, transparent 40%);
-            animation: float 20s ease-in-out infinite;
-            z-index: 0;
-        }
-        
-        @keyframes float {
-            0%, 100% { transform: translate(0, 0) rotate(0deg); }
-            33% { transform: translate(30px, -50px) rotate(120deg); }
-            66% { transform: translate(-20px, 20px) rotate(240deg); }
-        }
-        
-        /* Grain texture overlay */
+
+        /* Reusing your grain texture */
         body::after {
             content: '';
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            top: 0; left: 0; width: 100%; height: 100%;
             background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
             pointer-events: none;
             z-index: 1;
         }
-        
+
         .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 24px;
             position: relative;
             z-index: 2;
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 24px;
         }
-        
-        /* Header */
+
         header {
-            padding: 32px 0;
-            animation: slideDown 0.8s ease-out;
-        }
-        
-        .logo {
-            font-family: 'Publica Sans', 'Lexend', sans-serif;
-            font-size: 28px;
-            font-weight: 800;
-            letter-spacing: -0.02em;
-            background: linear-gradient(135deg, var(--accent) 0%, var(--secondary) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            display: inline-block;
-        }
-        
-        /* Hero Section */
-        .hero {
-            min-height: calc(100vh - 140px);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 60px 0;
-            position: relative;
-        }
-        
-        .hero-content {
-            max-width: 900px;
-            animation: fadeInUp 1s ease-out 0.3s both;
-        }
-        
-        .badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 20px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 50px;
-            font-size: 14px;
-            font-weight: 500;
-            letter-spacing: 0.02em;
-            margin-bottom: 32px;
-            backdrop-filter: blur(10px);
-            animation: pulse 2s ease-in-out infinite;
-        }
-        
-        .badge::before {
-            content: '';
-            width: 8px;
-            height: 8px;
-            background: var(--accent);
-            border-radius: 50%;
-            box-shadow: 0 0 12px var(--accent);
-            animation: blink 1.5s ease-in-out infinite;
-        }
-        
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.3; }
-        }
-        
-        h1 {
-            font-family: 'Publica Sans', 'Lexend', sans-serif;
-            font-size: clamp(40px, 8vw, 72px);
-            font-weight: 800;
-            line-height: 1.1;
-            margin-bottom: 24px;
-            letter-spacing: -0.03em;
-        }
-        
-        .gradient-text {
-            background: linear-gradient(135deg, #ffffff 0%, var(--accent) 50%, var(--secondary) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            background-size: 200% 200%;
-            animation: gradientShift 3s ease infinite;
-        }
-        
-        @keyframes gradientShift {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-        }
-        
-        .subtitle {
-            font-size: clamp(18px, 3vw, 24px);
-            color: var(--text-muted);
             margin-bottom: 48px;
-            line-height: 1.6;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
+            text-align: center;
         }
-        
-        /* Features Grid */
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 24px;
-            margin-top: 64px;
-            animation: fadeInUp 1s ease-out 0.6s both;
+
+        .logo {
+            font-family: 'Lexend', sans-serif;
+            font-size: 24px;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent) 0%, #FF6B9D 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 20px;
         }
-        
-        .feature-card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+
+        h1 {
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .last-updated {
+            color: var(--accent);
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        section {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
             border-radius: 16px;
-            padding: 32px 24px;
+            padding: 32px;
+            margin-bottom: 24px;
             backdrop-filter: blur(10px);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
-            overflow: hidden;
         }
-        
-        .feature-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: linear-gradient(90deg, var(--accent), var(--secondary));
-            transform: scaleX(0);
-            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-8px);
-            border-color: rgba(255, 255, 255, 0.2);
-            background: rgba(255, 255, 255, 0.05);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        }
-        
-        .feature-card:hover::before {
-            transform: scaleX(1);
-        }
-        
-        .feature-icon {
-            font-size: 40px;
-            margin-bottom: 16px;
-            display: block;
-            filter: drop-shadow(0 0 20px currentColor);
-        }
-        
-        .feature-card h3 {
-            font-family: 'Publica Sans', 'Lexend', sans-serif;
+
+        h2 {
+            color: var(--accent);
             font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 12px;
+            margin-bottom: 16px;
+            font-family: 'Lexend', sans-serif;
         }
-        
-        .feature-card p {
+
+        p {
             color: var(--text-muted);
-            font-size: 15px;
-            line-height: 1.6;
-        }
-        
-        /* CTA Section */
-        .cta-section {
-            margin-top: 80px;
-            animation: fadeInUp 1s ease-out 0.9s both;
-        }
-        
-        .cta-container {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 24px;
-            padding: 48px 32px;
-            backdrop-filter: blur(20px);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .cta-container::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(0, 217, 255, 0.1) 0%, transparent 70%);
-            animation: rotate 15s linear infinite;
-        }
-        
-        @keyframes rotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-        
-        .cta-content {
-            position: relative;
-            z-index: 1;
-        }
-        
-        .cta-title {
-            font-family: 'Publica Sans', 'Lexend', sans-serif;
-            font-size: clamp(24px, 4vw, 36px);
-            font-weight: 700;
             margin-bottom: 16px;
         }
-        
-        .cta-text {
+
+        ul {
+            margin-left: 20px;
             color: var(--text-muted);
-            margin-bottom: 32px;
-            font-size: 16px;
+            margin-bottom: 16px;
         }
-        
-        .contact-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-            padding: 16px 40px;
-            background: linear-gradient(135deg, var(--accent) 0%, var(--secondary) 100%);
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
             color: var(--text);
             text-decoration: none;
-            border-radius: 50px;
             font-weight: 600;
-            font-size: 16px;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 24px rgba(0, 217, 255, 0.3);
-            position: relative;
-            overflow: hidden;
+            transition: color 0.3s;
         }
-        
-        .contact-link::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 0;
-            height: 0;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.2);
-            transform: translate(-50%, -50%);
-            transition: width 0.6s, height 0.6s;
+
+        .back-link:hover {
+            color: var(--accent);
         }
-        
-        .contact-link:hover::before {
-            width: 300px;
-            height: 300px;
-        }
-        
-        .contact-link:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 32px rgba(0, 217, 255, 0.4);
-        }
-        
-        .contact-link span {
-            position: relative;
-            z-index: 1;
-        }
-        
-        /* Footer */
+
         footer {
-            padding: 40px 0;
             text-align: center;
-            border-top: 1px solid rgba(255, 255, 255, 0.08);
-            margin-top: 100px;
+            padding: 40px 0;
+            border-top: 1px solid var(--border);
             color: var(--text-muted);
             font-size: 14px;
-        }
-        
-        /* Animations */
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(40px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        @keyframes pulse {
-            0%, 100% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.02);
-            }
-        }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            .features {
-                grid-template-columns: 1fr;
-                gap: 16px;
-            }
-            
-            .hero {
-                min-height: calc(100vh - 120px);
-                padding: 40px 0;
-            }
-            
-            .badge {
-                font-size: 13px;
-                padding: 6px 16px;
-            }
-            
-            .cta-container {
-                padding: 32px 24px;
-            }
-            
-            footer {
-                margin-top: 60px;
-            }
-        }
-        
-        /* Accessibility */
-        @media (prefers-reduced-motion: reduce) {
-            *,
-            *::before,
-            *::after {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="logo">nsights.ink</div>
+            <a href="/" class="logo">nsights.ink</a>
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last Updated: April 2026</p>
         </header>
-        
+
         <main>
-            <section class="hero">
-                <div class="hero-content">
-                    <div class="badge">
-                        <span>Coming Soon</span>
-                    </div>
-                    
-                    <h1>
-                        Manage <span class="gradient-text">Multiple Shopify Stores</span> in One Place
-                    </h1>
-                    
-                    <p class="subtitle">
-                        The ultimate Android app for e-commerce entrepreneurs. Connect, monitor, and manage all your Shopify stores seamlessly from your mobile device.
-                    </p>
-                    
-                    <div class="features">
-                        <div class="feature-card">
-                            <span class="feature-icon">🚀</span>
-                            <h3>Multi-Store Connection</h3>
-                            <p>Connect unlimited Shopify stores and switch between them effortlessly</p>
-                        </div>
-                        
-                        <div class="feature-card">
-                            <span class="feature-icon">📈</span>
-                            <h3>Real-Time Insights</h3>
-                            <p>Monitor sales, inventory, and analytics across all your stores instantly</p>
-                        </div>
-                        
-                        <div class="feature-card">
-                            <span class="feature-icon">📱</span>
-                            <h3>Native Android</h3>
-                            <p>Built specifically for Android with a smooth, intuitive interface</p>
-                        </div>
-                    </div>
-                    
-                    <div class="cta-section">
-                        <div class="cta-container">
-                            <div class="cta-content">
-                                <h2 class="cta-title">Ready to Transform Your Workflow?</h2>
-                                <p class="cta-text">Get in touch to learn more or be notified when we launch</p>
-                                <a href="https://abubakriqbal.design" class="contact-link" target="_blank" rel="noopener noreferrer">
-                                    <span>Contact Us</span>
-                                    <span>→</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <section>
+                <h2>1. Introduction</h2>
+                <p>Welcome to nsights.ink. We are committed to protecting your business data and privacy. This policy explains how our application interacts with your Shopify store data to provide you with actionable insights.</p>
+            </section>
+
+            <section>
+                <h2>2. Data We Fetch</h2>
+                <p>When you connect your Shopify store(s) to nsights.ink via our secure OAuth process, we access specific data points required to generate your dashboard, including:</p>
+                <ul>
+                    <li><strong>Order Information:</strong> Transaction totals, order counts, and fulfillment status.</li>
+                    <li><strong>Sales Data:</strong> Gross and net sales figures to calculate growth trends.</li>
+                    <li><strong>Store Details:</strong> Shop name, domain, and currency settings.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>3. How We Use Your Data</h2>
+                <p>Your data is used exclusively for the following "Internal Tool" functions:</p>
+                <ul>
+                    <li><strong>Aggregation:</strong> Combining data from multiple stores into a single view.</li>
+                    <li><strong>Insights Generation:</strong> Calculating performance metrics that Shopify might not show in a combined view.</li>
+                    <li><strong>Monitoring:</strong> Providing real-time updates on your store's health directly to your Android device.</li>
+                </ul>
+                <p><strong>Note:</strong> We do not sell your store data to third parties. Data is used solely to provide the services you have requested within the app.</p>
+            </section>
+
+            <section>
+                <h2>4. Data Security</h2>
+                <p>We use industry-standard encryption to protect the tokens that grant access to your Shopify data. Access is strictly controlled and limited to the technical necessity of providing your store insights.</p>
+            </section>
+
+            <section>
+                <h2>5. Contact Us</h2>
+                <p>If you have questions about how your data is handled, please reach out via our contact portal:</p>
+                <a href="https://abubakriqbal.design" style="color: var(--accent); text-decoration: none;">abubakriqbal.design</a>
             </section>
         </main>
-        
+
+        <a href="/" class="back-link">← Back to Home</a>
+
         <footer>
-            <p>&copy; 2024 nsights.ink. All rights reserved.</p>
+            <p>&copy; 2026 nsights.ink. All rights reserved.</p>
         </footer>
     </div>
-    
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "nsights.ink",
-        "applicationCategory": "BusinessApplication",
-        "operatingSystem": "Android",
-        "description": "Connect and manage multiple Shopify stores seamlessly on Android",
-        "offers": {
-            "@type": "Offer",
-            "availability": "https://schema.org/ComingSoon"
-        },
-        "creator": {
-            "@type": "Organization",
-            "name": "nsights.ink",
-            "url": "https://nsights.ink"
-        }
-    }
-    </script>
 </body>
 </html>
